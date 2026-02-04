@@ -116,4 +116,4 @@ Frontend runs at `http://localhost:5173`.
 
 ## License
 
-MIT
+srinivaskompella2005@gmail.com
