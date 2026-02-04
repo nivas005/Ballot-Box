@@ -1,4 +1,5 @@
-const BASE = '/api';
+// Base API URL (from Vite environment variable)
+const BASE = import.meta.env.VITE_API_URL;
 
 function getHeaders() {
   const token = localStorage.getItem('token');
@@ -7,31 +8,37 @@ function getHeaders() {
   return headers;
 }
 
+async function handleResponse(res) {
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    throw new Error(data.error || 'Request failed');
+  }
+  return { data, status: res.status };
+}
+
 export const api = {
   async get(path) {
-    const res = await fetch(BASE + path, { headers: getHeaders() });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok) throw new Error(data.error || 'Request failed');
-    return { data, status: res.status };
+    const res = await fetch(`${BASE}${path}`, {
+      headers: getHeaders()
+    });
+    return handleResponse(res);
   },
+
   async post(path, body) {
-    const res = await fetch(BASE + path, {
+    const res = await fetch(`${BASE}${path}`, {
       method: 'POST',
       headers: getHeaders(),
-      body: body ? JSON.stringify(body) : undefined
+      body: JSON.stringify(body)
     });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok) throw new Error(data.error || 'Request failed');
-    return { data, status: res.status };
+    return handleResponse(res);
   },
+
   async put(path, body) {
-    const res = await fetch(BASE + path, {
+    const res = await fetch(`${BASE}${path}`, {
       method: 'PUT',
       headers: getHeaders(),
       body: body ? JSON.stringify(body) : undefined
     });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok) throw new Error(data.error || 'Request failed');
-    return { data, status: res.status };
+    return handleResponse(res);
   }
 };
