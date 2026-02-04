@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "afbed7f2-30f6-4a26-8cfd-87745faf9d8a",
+      "email": "admin@ballotbox.local",
+      "password": "$2a$10$jfyGWYp2cZdDBkrnb0lQOuizHdTNpunKAAhbAkpW3l7Y/EsrTShdy",
+      "name": "Admin",
+      "role": "admin",
+      "secretToken": "b669d92f-bdc8-40b2-9522-28983bca98d2",
+      "createdAt": 1770207389078
+    }
+  ]
+}

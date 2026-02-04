@@ -1,0 +1,35 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 1770207389020,
+      "transactions": [
+        {
+          "type": "genesis",
+          "data": "Ballot Box Genesis"
+        }
+      ],
+      "previousHash": "0",
+      "nonce": 0,
+      "hash": "bacdd4544c3bf9d56780882edf6769e2d0a5923e9dd7c20f95eeeb649103e0f3"
+    },
+    {
+      "index": 1,
+      "timestamp": 1770207933253,
+      "transactions": [
+        {
+          "voterHash": "b86b3c23ed9abc123b079f34055221f1dfc093c803258c9153038a3c31ae3960",
+          "candidateId": "b1c9a46e-ec22-47c9-966c-8a466333431d",
+          "electionId": "3da753f2-4fb2-4db2-961e-e1e8eb562c9b",
+          "timestamp": 1770207933253
+        }
+      ],
+      "previousHash": "bacdd4544c3bf9d56780882edf6769e2d0a5923e9dd7c20f95eeeb649103e0f3",
+      "nonce": 3226,
+      "hash": "000e41f5c7870fa011dbbf7a8603994c220bd0cbb38f1fb14b95b285b0809b20"
+    }
+  ],
+  "votedAddresses": [
+    "b86b3c23ed9abc123b079f34055221f1dfc093c803258c9153038a3c31ae3960"
+  ]
+}

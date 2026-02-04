@@ -1,0 +1,109 @@
+.voting-page {
+  padding: 2rem 0;
+}
+
+.voting-header {
+  margin-bottom: 2rem;
+}
+.back-btn {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+.back-btn:hover {
+  color: var(--accent);
+}
+.voting-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+.voting-desc {
+  color: var(--text-secondary);
+}
+
+.voting-form h2,
+.vote-success-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.candidate-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.candidate-option:hover {
+  border-color: var(--accent);
+  background: rgba(0, 212, 170, 0.05);
+}
+.candidate-option.selected {
+  border-color: var(--accent);
+  background: rgba(0, 212, 170, 0.1);
+}
+
+.candidate-option input {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--accent);
+}
+
+.candidate-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.vote-success-card {
+  text-align: center;
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  background: var(--success);
+  color: var(--bg-primary);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 64px;
+  border-radius: 50%;
+}
+
+.vote-success-card h2 {
+  margin-bottom: 0.5rem;
+}
+.vote-success-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.verify-result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.verify-success .hash {
+  font-size: 0.8rem;
+  word-break: break-all;
+}

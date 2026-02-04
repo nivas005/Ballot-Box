@@ -1,0 +1,82 @@
+.blockchain-explorer {
+  padding: 2rem 0;
+}
+
+.explorer-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.explorer-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+.explorer-header p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.validity-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.validity-badge.valid {
+  background: rgba(0, 212, 170, 0.2);
+  color: var(--success);
+}
+.validity-badge.invalid {
+  background: rgba(255, 107, 107, 0.2);
+  color: var(--danger);
+}
+
+.blocks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.block-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.block-index {
+  font-weight: 700;
+  color: var(--accent);
+}
+.block-tx {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.block-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.detail-row {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.detail-row .label {
+  color: var(--text-secondary);
+  min-width: 120px;
+}
+.detail-row .value.hash {
+  word-break: break-all;
+  font-size: 0.85rem;
+}

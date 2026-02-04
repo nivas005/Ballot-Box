@@ -1,0 +1,25 @@
+{
+  "elections": [
+    {
+      "id": "3da753f2-4fb2-4db2-961e-e1e8eb562c9b",
+      "title": "Student Council",
+      "description": "",
+      "startTime": 1770207920686,
+      "endTime": 1770812720686,
+      "candidates": [
+        {
+          "id": "b1c9a46e-ec22-47c9-966c-8a466333431d",
+          "name": "Srinivas",
+          "order": 0
+        },
+        {
+          "id": "a6900324-b7ea-4b90-aaf3-834b5c43f452",
+          "name": "Ram Charan",
+          "order": 1
+        }
+      ],
+      "createdBy": "afbed7f2-30f6-4a26-8cfd-87745faf9d8a",
+      "createdAt": 1770207920686
+    }
+  ]
+}
